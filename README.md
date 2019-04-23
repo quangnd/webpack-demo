@@ -21,7 +21,7 @@ module.exports = {
 }
 
 ```
-5. Installed `style-loader` and `css-loader`
+5. Install two loaders: `style-loader` and `css-loader`
 - Install with `npm install --save-dev style-loader css-loader`.
 - Configured `webpack.config` to use both loaders on css files
 ```
@@ -30,6 +30,26 @@ module.exports = {
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"]
+      }
+    ]
+  }
+```
+6. Install bootstrap module `npm install --save-dev bootstrap`
+7. Install `sass-loader` and `node-sass`
+```
+npm install --save-dev sass-loader node-sass
+```
+8. Edit rule in webpack config
+```
+ module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [
+          "style-loader", //3. Inject styles into DOM
+          "css-loader", //2. Turn css into commonjs
+          "sass-loader" //1. Turn sass to css
+        ]
       }
     ]
   }
