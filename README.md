@@ -54,3 +54,4 @@ npm install --save-dev sass-loader node-sass
     ]
   }
 ```
+9. Install HTML webpack plugin `npm i --save-dev html-webpack-plugin`
