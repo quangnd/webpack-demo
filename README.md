@@ -1,6 +1,7 @@
-# Webpack-demo
+# Webpack from scratch 🍱
 
 ## Steps
+*Check out my **commits** to see the details*
 
 1. Add default `package.json` with `npm init -y`
 2. Add **webpack**
@@ -59,4 +60,8 @@ npm install --save-dev sass-loader node-sass
 ```
 npm install --save-dev html-loader file-loader clean-webpack-plugin
 ```
-11. Add jquery and popper to use JS in Bootstrap ``
+11. Add jquery and popper to use JS in Bootstrap `npm install --save-dev jquery popper.js`
+12. Add plugins to extract and optimize css 
+```
+npm install --save-dev mini-css-extract-plugin optimize-css-assets-webpack-plugin
+```
