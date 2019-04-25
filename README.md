@@ -55,3 +55,8 @@ npm install --save-dev sass-loader node-sass
   }
 ```
 9. Install HTML webpack plugin `npm i --save-dev html-webpack-plugin`
+10. Install html-loader, filer-loader and clean-webpack-plugin
+```
+npm install --save-dev html-loader file-loader clean-webpack-plugin
+```
+11. Add jquery and popper to use JS in Bootstrap ``
